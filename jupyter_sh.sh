@@ -1,16 +1,18 @@
 #!/bin/bash
-
+sudo chmod -R 777 /home/
+curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master/bootstrap/bootstrap.py \
+  | sudo python3 - \
+    --admin jupyterhub
 sudo apt-get update
 sudo  apt-get install -y python-pip
 
 cd home/flybird
-curl https://raw.githubusercontent.com/jupyterhub/the-littlest-jupyterhub/master/bootstrap/bootstrap.py \
-  | sudo python3 - \
-    --admin jupyterhub
 
 git clone https://github.com/flybirdgroup/faker_demo.git
 cd faker_demo/
 source venv/bin/activate
+
+pip install -r requirements.txt
 
 schema=./data/input/account_id_schema_new.csv
 outAvro=./data/output/avro/account_id_schema_new.avro
