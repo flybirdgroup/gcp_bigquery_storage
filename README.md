@@ -13,7 +13,9 @@ there are 5 key files:
 
 1. instance.tf---an important file to build resource like google_compute_instance, google_storage_bucket.
 ![png](./img/3.png)
+
 2. variables.tf--a file to show variables
+
 ![png](./img/4.png)
 3. terraform.tfvars-- set values or params for the variables
 ![png](./img/5.png)
