@@ -17,8 +17,11 @@ there are 5 key files:
 2. variables.tf--a file to show variables
 
 ![png](./img/4.png)
+
 3. terraform.tfvars-- set values or params for the variables
+
 ![png](./img/5.png)
+
 4. outputs.tf--output some variables or params we think its important like vm-static-ip
 5. jupyter_sh.sh--its a meta_startup_script for creating vm instance. this file will help us to build jupyter_hub,git clone my fake_data_genertor project, install python package, generate data, copy data to Google Storage bucket and build bigquery's dataset and tables based on the data from Storage bucket.
 
