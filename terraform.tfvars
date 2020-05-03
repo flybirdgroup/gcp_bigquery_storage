@@ -1,0 +1,6 @@
+project = "terraform-45110831"
+credentials_file = "terraform-45110831-450974fa2608.json"
+region = "us-central1"
+zone = "us-central1-a"
+bucket_name = "zhao_michael_bucket"
+jupyter_sh = "jupyter_sh.sh"
